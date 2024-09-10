@@ -16,14 +16,14 @@ jobs:
     # Install and update dependencies for GitHub Actions ecosystem
     - name: Update GitHub Actions dependencies
       run: |
-        dependabot update --package-ecosystem="github-actions" --directory="/" --allow="minor"
+        dependabot update --package-ecosystem="github-actions" --directory="/"
 
     # Install and update dependencies for npm ecosystem
     - name: Update npm dependencies
       run: |
-        dependabot update --package-ecosystem="npm" --directory="/javascript" --allow="minor"
+        dependabot update --package-ecosystem="npm" --directory="/javascript"
 
     # Install and update dependencies for bundler ecosystem
     - name: Update Bundler dependencies
       run: |
-        dependabot update --package-ecosystem="bundler" --directory="/ruby" --allow="minor"
+        dependabot update --package-ecosystem="bundler" --directory="/ruby"
