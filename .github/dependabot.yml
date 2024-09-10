@@ -4,12 +4,18 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "live"
+    allow:
+      - dependency-type: "all"
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
-      interval: "weekly"
+      interval: "live"
+    allow:
+      - dependency-type: "all"
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
-      interval: "weekly"
+      interval: "live"
+    allow:
+      - dependency-type: "all"
